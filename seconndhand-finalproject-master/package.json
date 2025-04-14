@@ -1,0 +1,40 @@
+{
+  "name": "challenge-08",
+  "version": "1.0.0",
+  "description": "Ya ini untuk tugas, jangan nyontek lebih baik bertanya pada yang punya 😘",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "node server.js"
+  },
+  "author": "Ari Ardiansyah",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.30.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "jest": "^28.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3",
+    "sequelize": "^6.20.1",
+    "supertest": "^6.2.3",
+    "swagger-ui-express": "^4.3.0",
+    "uuid": "^8.3.2",
+    "validatorjs": "^3.22.1",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "postman-to-openapi": "^2.2.1"
+  }
+}
