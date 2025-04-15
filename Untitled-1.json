@@ -398,5 +398,95 @@
         }
       }
     }
+  },
+  "components": {
+    "parameters": {
+      "todolistId": {
+        "name": "todolistId",
+        "in": "path",
+        "required": true,
+        "description": "Todolist id for updated",
+        "schema": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "examples": {
+          "java": {
+            "description": "Sample todolist id for Java",
+            "value": "1"
+          },
+          "PHP": {
+            "description": "Sample todolist id for PHP",
+            "value": "2"
+          }
+        }
+      }
+    },
+    "schemas": {
+      "Todolist": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "number",
+            "format": "int32"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "CreateOrUpdateTodolist": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "number",
+            "format": "int32"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ArrayTodolist": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "priority": {
+              "type": "number",
+              "format": "int32"
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
